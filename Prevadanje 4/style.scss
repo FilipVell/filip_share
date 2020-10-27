@@ -1,0 +1,25 @@
+$primary: #0041a3;
+$fontSize: 40px;
+$font-family: "Montserrat", sans-serif;
+
+
+
+
+h1{
+    color: $primary;
+    font-family: $fontFamily;
+    font-size: $fontSize;
+}
+
+@mixin asd {
+
+    font-size: 300px;
+    color: red;
+    font-style: italic;
+    
+}
+
+
+p{
+    &.fff{@include asd};
+}
